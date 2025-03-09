@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.midterm_section4_2230369.DatapackageController">
+   <children>
+      <TextField fx:id="packageName" layoutX="119.0" layoutY="51.0" />
+      <Label layoutX="121.0" layoutY="28.0" text="Package Name" />
+      <TextField fx:id="dataAmount" layoutX="119.0" layoutY="110.0" />
+      <Label layoutX="121.0" layoutY="87.0" text="Data Amount" />
+      <ComboBox fx:id="validity" layoutX="332.0" layoutY="50.0" prefWidth="150.0" />
+      <Label layoutX="332.0" layoutY="27.0" text="Validity" />
+      <TextField fx:id="price" layoutX="119.0" layoutY="166.0" />
+      <Label layoutX="121.0" layoutY="143.0" text="Price" />
+      <DatePicker fx:id="offerEnds" layoutX="332.0" layoutY="163.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="334.0" layoutY="82.0" text="Availability" />
+      <Label layoutX="334.0" layoutY="145.0" text="Offer Ends" />
+      <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#createDataPack" prefHeight="36.0" prefWidth="160.0" text="Create Data Package" />
+      <ComboBox fx:id="availability" layoutX="332.0" layoutY="110.0" prefWidth="150.0" />
+      <Text fx:id="validationMessage" layoutX="280.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TableView fx:id="dataTable" layoutX="24.0" layoutY="306.0" prefHeight="200.0" prefWidth="552.0">
+        <columns>
+          <TableColumn fx:id="packageNameColumn" prefWidth="136.0" text="Package Name" />
+          <TableColumn fx:id="amountColumn" prefWidth="73.0" text="Amount" />
+            <TableColumn fx:id="validityColumn" prefWidth="89.0" text="Validity" />
+            <TableColumn fx:id="availabilityColumn" prefWidth="74.0" text="Availability" />
+            <TableColumn fx:id="priceColumn" prefWidth="73.0" text="Price" />
+            <TableColumn fx:id="offerEndsColumn" prefWidth="106.0" text="Offer Ends" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
